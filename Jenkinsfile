@@ -17,14 +17,14 @@ pipeline {
         stage('Compile') {
             steps {
                 echo 'Compiling Python files'
-                bat 'python -m compileall -q .'
+               bat '"C:\\Users\\unars\\AppData\\Local\\Programs\\Python\\Python312\\python.exe" -m compileall -q .'
             }
         }
 
         stage('Test') {
             steps {
                 echo 'Running Python unit tests'
-                bat 'python -m unittest -v'
+                bat '"C:\\Users\\unars\\AppData\\Local\\Programs\\Python\\Python312\\python.exe" -m unittest -v'
             }
         }
 
